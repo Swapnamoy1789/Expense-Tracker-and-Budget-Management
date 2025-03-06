@@ -26,5 +26,5 @@ yarn-error.log*
 node_modules/
 
 # Ignore API config file (Sensitive information)
-src/utils/api.ts
+
 .vercel
