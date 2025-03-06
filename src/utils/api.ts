@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://expense-tracker-and-budget-management.onrender.com/api"; // Backend URL
+const API_BASE_URL = "https://expense-tracker-and-budget-management.onrender.com"; // Backend URL
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
