@@ -1,46 +1,118 @@
-# Getting Started with Create React App
+💰 Expense Tracker & Budget Management System
+🚀 Live Demo: https://expense-tracker-frontend-livid-zeta.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📌 Overview
+Expense Tracker & Budget Management System is a full-stack web application designed to help users track their expenses, set category-wise budgets, and manage their financial goals effectively. The app provides a seamless authentication system, expense tracking, budget allocation, and a detailed dashboard to visualize spending patterns.
 
-## Available Scripts
+🌟 Features
+✅ User Authentication - Secure JWT-based login & registration
+✅ Category-wise Budgeting - Set individual budgets for each category
+✅ Expense Tracking - Add, categorize, and monitor expenses
+✅ Dashboard Analytics - View total expenses, remaining budget, and category-wise breakdown
+✅ Seamless UI/UX - Built with React & Material UI for a modern, responsive experience
+✅ RESTful APIs - Secure backend with Express, Sequelize ORM, and PostgreSQL/MySQL
+✅ Cloud Deployment - Hosted using Vercel (Frontend), Render (Backend), and Railway (Database)
 
-In the project directory, you can run:
+🛠️ Tech Stack
+🌐 Frontend:
+React.js (TypeScript) - Modern frontend framework
+Material UI - Beautiful and responsive UI components
+Axios - API communication
+React Router - For seamless navigation
+🖥️ Backend:
+Node.js + Express.js - Lightweight and scalable API
+JWT Authentication - Secure login & authorization
+Sequelize ORM - Efficient database management
+Express Validator - Backend validation
+📦 Database & Hosting:
+PostgreSQL/MySQL - Cloud database hosted on Railway
+Backend Hosting - Render
+Frontend Hosting - Vercel
+📜 API Endpoints
+Method	Endpoint	Description
+POST	/api/auth/register	Register a new user
+POST	/api/auth/login	Login & receive JWT token
+GET	/api/budgets	Fetch user’s budgets
+POST	/api/budgets	Add a budget for a category
+GET	/api/expenses	Get all expenses
+POST	/api/expenses	Add a new expense
+GET	/api/dashboard	Get category-wise budget & expenses
+🔧 Installation & Setup
+1️⃣ Clone the Repository
+sh
+Copy
+Edit
+git clone https://github.com/your-username/expense-tracker.git
+cd expense-tracker
+2️⃣ Backend Setup
+sh
+Copy
+Edit
+cd expense-tracker-backend
+npm install
+Create a .env file in expense-tracker-backend/ and add:
 
-### `npm start`
+sh
+Copy
+Edit
+PORT=5000
+DATABASE_URL=mysql://your-railway-db-url
+JWT_SECRET=your_secret_key
+Run the backend:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+sh
+Copy
+Edit
+npm run dev
+3️⃣ Frontend Setup
+sh
+Copy
+Edit
+cd ../expense-tracker-frontend
+npm install
+Create a .env file in expense-tracker-frontend/ and add:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+sh
+Copy
+Edit
+VITE_API_BASE_URL=https://expense-tracker-and-budget-management.onrender.com/api
+Run the frontend:
 
-### `npm test`
+sh
+Copy
+Edit
+npm start
+App will run at: http://localhost:3000
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🚀 Deployment
+Frontend Deployment (Vercel)
+sh
+Copy
+Edit
+git add .
+git commit -m "Deploy frontend"
+git push origin main
+Vercel will automatically deploy the latest version.
 
-### `npm run build`
+Backend Deployment (Render)
+Push backend changes to GitHub
+Deploy as a Web Service in Render
+Add .env variables manually in Render
+Database Deployment (Railway)
+Create a PostgreSQL/MySQL instance on Railway
+Copy the database URL and update in .env
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🤝 Contributing
+Fork the repository
+Create a new branch: git checkout -b feature-branch
+Commit your changes: git commit -m "Added feature"
+Push to GitHub: git push origin feature-branch
+Create a Pull Request 🚀
+📜 License
+This project is licensed under the MIT License.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📞 Contact
+📧 Email: www.swapnamoyrc@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/swapnamoy-roy-choudhury-b8a38b26a/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+🚀 Happy Budgeting! 🎯
