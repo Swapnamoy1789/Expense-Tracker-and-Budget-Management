@@ -1,5 +1,6 @@
 💰 Expense Tracker & Budget Management System
-🚀 Live Demo: https://expense-tracker-frontend-livid-zeta.vercel.app/
+🚀 [View Live Demo](https://expense-tracker-frontend-livid-zeta.vercel.app/)
+
 
 📌 Overview
 Expense Tracker & Budget Management System is a full-stack web application designed to help users track their expenses, set category-wise budgets, and manage their financial goals effectively. The app provides a seamless authentication system, expense tracking, budget allocation, and a detailed dashboard to visualize spending patterns.
@@ -25,7 +26,7 @@ JWT Authentication - Secure login & authorization
 Sequelize ORM - Efficient database management
 Express Validator - Backend validation
 📦 Database & Hosting:
-PostgreSQL/MySQL - Cloud database hosted on Railway
+MySQL - Cloud database hosted on Railway
 Backend Hosting - Render
 Frontend Hosting - Vercel
 📜 API Endpoints
@@ -109,7 +110,7 @@ Commit your changes: git commit -m "Added feature"
 Push to GitHub: git push origin feature-branch
 Create a Pull Request 🚀
 📜 License
-This project is licensed under the MIT License.
+This project is open-source and can be used for learning purposes or customization.
 
 📞 Contact
 📧 Email: www.swapnamoyrc@gmail.com
