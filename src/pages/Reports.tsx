@@ -60,7 +60,7 @@ const Reports: React.FC = () => {
         return;
       }
 
-      const response = await api.get("/reports", {
+      const response = await api.get("/api/reports", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

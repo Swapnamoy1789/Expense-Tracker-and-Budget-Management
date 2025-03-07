@@ -37,7 +37,7 @@ const Budgets = () => {
 
   const fetchBudgets = async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/budgets`, {
+      const response = await axios.get(`${API_BASE_URL}/api/budgets`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       setBudgets(response.data);
@@ -49,7 +49,7 @@ const Budgets = () => {
   const addBudget = async () => {
     try {
       await axios.post(
-        `${API_BASE_URL}/budgets`,
+        `${API_BASE_URL}/api/budgets`,
         { category: newCategory, limit: newLimit },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

@@ -13,7 +13,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const response = await axios.get(`${API_BASE_URL}/dashboard`, {
+        const response = await axios.get(`${API_BASE_URL}/api/dashboard`, {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         });
         setTotalExpenses(response.data.totalExpenses);

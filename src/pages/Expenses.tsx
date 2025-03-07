@@ -48,7 +48,7 @@ const Expenses = () => {
 
   const fetchExpenses = async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/expenses`, {
+      const response = await axios.get(`${API_BASE_URL}/api/expenses`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       setExpenses(response.data);
@@ -64,7 +64,7 @@ const Expenses = () => {
     }
     try {
       await axios.post(
-        `${API_BASE_URL}/expenses`,
+        `${API_BASE_URL}/api/expenses`,
         { description, amount: parseFloat(amount), category, date: date.format("YYYY-MM-DD") },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -82,7 +82,7 @@ const Expenses = () => {
 
   const deleteExpense = async (id: number) => {
     try {
-      await axios.delete(`${API_BASE_URL}/expenses/${id}`, {
+      await axios.delete(`${API_BASE_URL}/api/expenses/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       fetchExpenses();
